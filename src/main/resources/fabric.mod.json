@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pale",
+  "version": "${version}",
+
+  "name": "Pale",
+  "description": "Makes rotten flesh inflict Pale, a status effect that causes damage in sunlight, instead of Hunger.",
+  "authors": [
+    "CursedFlames"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/pale",
+    "sources": "https://github.com/CursedFlames/Pale",
+    "issues": "https://github.com/CursedFlames/Pale/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/pale/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cursedflames.pale.Pale"
+    ]
+  },
+  "mixins": [
+    "pale.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}

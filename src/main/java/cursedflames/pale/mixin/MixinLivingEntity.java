@@ -43,7 +43,7 @@ public abstract class MixinLivingEntity extends Entity {
 
 		StatusEffectInstance currentEffect = this.getStatusEffect(StatusEffectPale.PALE);
 		if (currentEffect == null) {
-			this.addStatusEffect(new StatusEffectInstance(StatusEffectPale.PALE, baseDuration,0, false, false, true));
+			this.addStatusEffect(new StatusEffectInstance(StatusEffectPale.PALE, baseDuration, 0, false, false, true));
 			return;
 		}
 		// Extend current effect, and amplify effect if below max level
